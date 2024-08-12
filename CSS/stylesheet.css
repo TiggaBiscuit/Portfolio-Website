@@ -1,0 +1,251 @@
+:root {
+    --text-color-title: #F1A208;
+    --text-color-body: #FFD26B;
+    --background-color-dark: #1e1e1e;
+    --background-color-dark-hover: #2c2c2c;
+}
+
+main {
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: auto 0;
+}
+
+body {
+    line-height: 1;
+    font-family: "Oxygen", sans-serif;
+    background-color: var(--background-color-dark);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Pavanam", sans-serif;
+    font-weight: 500;
+    color: var(--text-color-title);
+    text-align: center;
+}
+
+h2 {
+    font-family: "Oxygen Mono", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    display: inline;
+    color: var(--text-color-title);
+
+}
+
+p,
+ol {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    color: var(--text-color-body);
+}
+
+/* ====== NavBar Start ====== */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+li a {
+    color: var(--text-color-title);
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    display: inline;
+    width: 5em;
+}
+
+li a:hover {
+    background-color: var(--background-color-dark-hover)
+}
+
+li {
+    float: left;
+}
+
+a {
+    background-color: var(--background-color-dark);
+    padding: 0.63em;
+    /* display: block; */
+}
+
+nav {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* ====== NavBar End ====== */
+
+/* ====== Collapsible Content Start====== */
+
+/* .weekly_update {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 20px;
+    cursor: pointer;
+    padding: 5px;
+    border: 5px;
+    background-color: var(--background-color-dark-hover);
+}
+
+summary {
+    text-align: left;
+    list-style-position: outside;
+    margin-left: 30px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+}
+
+summary::marker {
+    color: var(--text-color-title);
+    text-align: left;
+    list-style-position: outside;
+    margin-left: 30px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+}
+
+summary:hover {
+    text-align: left;
+    list-style-position: outside;
+    margin-left: 30px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+} */
+
+/* ====== Collapsible Content End ====== */
+
+/* ====== Main Content  ====== */
+
+.home_content {
+    max-width: auto;
+    text-align: left;
+    padding: 1em 1em 1em 1em;
+    cursor: pointer;
+    background-color: var(--background-color-dark-hover);
+}
+
+.notebook {
+    width: auto;
+    height: 100px;
+    display: inline-block;
+}
+
+.week-1,
+.week-2,
+.week-3,
+.week-4 {
+    max-width: auto;
+    text-align: left;
+    padding: 1em 1em 1em 1em;
+    cursor: pointer;
+    background-color: var(--background-color-dark-hover);
+}
+
+/* .week-1 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-2 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-3 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-4 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-5 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-6 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-7 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-8 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-9 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-10 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-11 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.week-12 {
+    max-width: auto;
+    text-align: left;
+    padding-left: 1em;
+} */
+
+/* ====== Main Content End ====== */
+
+/* ====== Footer Start ====== */
+
+footer {
+    padding-top: 3em;
+    text-align: center;
+    color: var(--text-color-title);
+    /* margin-top: auto; */
+}
+
+.footer {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 200;
+    line-height: 1em;
+    color: var(--text-color-title);
+}
+
+/* ====== Footer End ====== */
