@@ -178,92 +178,43 @@ summary:hover {
 }
 
 .notebook {
-    height: 100px;
-    display: inline-block;
+    display: list-item;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: auto;
 }
 
-.week-1,
+/* .week-1,
 .week-2,
 .week-3,
-.week-4 {
-    max-width: auto;
-    text-align: left;
+.week-4 .week-5 {
     padding: 1em 1em 1em 1em;
-    cursor: pointer;
-    background-color: var(--background-color-dark-hover);
-}
-
-/* .week-1 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-2 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-3 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-4 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-5 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-6 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-7 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-8 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-9 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-10 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-11 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
-}
-
-.week-12 {
-    max-width: auto;
-    text-align: left;
-    padding-left: 1em;
 } */
+
+/* ====== Cards Start ======*/
+
+.card {
+    background: var(--background-color-dark-hover);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+    transition: all 400ms ease;
+    height: auto;
+    gap: 1em;
+    margin: 1em;
+    flex-wrap: wrap;
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    line-height: 1.5em;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        grid-column: span 3;
+        background: var(--background-color-dark-hover);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+        transition: all 400ms ease;
+    }
+}
+
+/* ====== Cards End ======*/
 
 /* ====== Main Content End ====== */
 
