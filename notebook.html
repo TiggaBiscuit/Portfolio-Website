@@ -2,339 +2,429 @@
 <html lang="en-NZ">
 
 <head>
-    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dan Agnew - Weekly Notebook</title>
-    <meta name="description" content="A collection of notes around Web Design starting in 2024">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dan Agnew - Notebook</title>
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Pavanam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- <link rel="javascript" href="/JS/primary.js" -->
 </head>
 
-<body>
-    <header>
-        <h1>Weekly Web Design Notebooks</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="about.html">About Me</a></li> -->
-            <li><a href="notebook.html" class="active">Weekly Notebooks</a></li>
-            <li><a href="research.html">T3 Research Project</a></li>
-        </ul>
+<body data-bs-theme="dark">
+    <!--Bootstrap Navbar Start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h2>Dan Agnew</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="notebook.html">Weekly Notebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="research.html">T3 Research Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <!--Bootstrap Navbar End-->
     <main>
         <div class="notebook">
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 1</h2>
-                        </summary>
-                        <p>
-                            In Week 1 we had Two Lectures, A Workshop and Computer Lab.
-                        </p>
-                        <p>
-                            In the Workshop we performed an activity around collaboration and working together to solve
-                            an
-                            issue
-                            under time
-                            pressure, where we had to work together in small groups to identify how to solve a situation
-                            where a
-                            room had been
-                            overbooked with three groups arriving in a short frame of time.
-                        </p>
-                        <p>
-                            In the Computer Lab we did some basic app / file setup with the tools we will use (Figma,
-                            GitLab,
-                            etc.) as well as an
-                            introduction to Visual Studio Code and the basic setup of an HTML boilerplate.
-                        <p>
-                            We had two lectures this week, the first was focussed on 'Problem Solving and the How and
-                            Why',
-                            this
-                            covered some
-                            context around problem solving, as it was the first lecture of the semester it also covered
-                            a
-                            lot of
-                            the basic
-                            information around the course in general.
-                            The second was focussed on 'Digital Products and Society', this covered the history of
-                            Digital
-                            Products
-                            and
-                            Technology. It also touched on where the User Interface came from and how it all started and
-                            some
-                            key
-                            events
-                            within history around the creation of UI and the introduction of computers to the masses.
-                        </p>
-                    </details>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <h2>Week 1</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>
+                                In Week 1 we had Two Lectures, A Workshop and Computer Lab.
+                            </p>
+                            <p>
+                                In the Workshop we performed an activity around collaboration and working together to
+                                solve
+                                an
+                                issue
+                                under time
+                                pressure, where we had to work together in small groups to identify how to solve a
+                                situation
+                                where a
+                                room had been
+                                overbooked with three groups arriving in a short frame of time.
+                            </p>
+                            <p>
+                                In the Computer Lab we did some basic app / file setup with the tools we will use
+                                (Figma,
+                                GitLab,
+                                etc.) as well as an
+                                introduction to Visual Studio Code and the basic setup of an HTML boilerplate.
+                            <p>
+                                We had two lectures this week, the first was focussed on 'Problem Solving and the How
+                                and
+                                Why',
+                                this
+                                covered some
+                                context around problem solving, as it was the first lecture of the semester it also
+                                covered
+                                a
+                                lot of
+                                the basic
+                                information around the course in general.
+                                The second was focussed on 'Digital Products and Society', this covered the history of
+                                Digital
+                                Products
+                                and
+                                Technology. It also touched on where the User Interface came from and how it all started
+                                and
+                                some
+                                key
+                                events
+                                within history around the creation of UI and the introduction of computers to the
+                                masses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <h2>Week 2</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                In Week 2 we had Two Lectures, A Workshop and Computer Lab.
+                            </p>
+
+                            <p>
+                                I was unfortunately away, and unable to attend the Workshop for Week 2.
+                            </p>
+                            <p>
+                                I was unfortunately away, and unable to attend the Computer Lab for Week 2.
+                            </p>
+                            <p>
+                                We had two lectures this week, the first was focussed on 'The Psychology of Experience',
+                                this
+                                covered the framework for understanding design research and the various forms of
+                                Experience
+                                (Dynamic,
+                                Complex, Subjective). It also took us through various aspects of experience the
+                                Psychology behind it that as designers need to take into account.
+                                The second was focussed on 'Document Structure', this covered basic document and
+                                typography
+                                structures of a website as well as various different aspects and considerations of web
+                                design/development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <h2>Week 3</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                In Week 3 we had Two Lectures, A Workshop and Computer Lab.
+                            </p>
+                            <p>
+                                In the Workshop we performed an activity where we were given a website and we
+                                sitemapped
+                                it as a
+                                group. This involved creating a spreadsheet of all the links and different pages to
+                                the
+                                website.
+                            </p>
+                            <p>
+                                In the Computer Lab we focussed on fonts, and using Figma to play around with fonts
+                                and
+                                find
+                                ones
+                                we
+                                like. We did this by finding a body and a header font then adjusting the weight,
+                                style
+                                (bold,
+                                italic, etc.), and the line heights. You can see this below.
+                            </p>
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100% viewport" height="450"
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F88dXD9Plx3SM0HgKRcnRVc%2FFonts---Lab-3%3Fnode-id%3D0-1%26t%3DciNGHzoh31rsloyo-1"
+                                allowfullscreen></iframe>
+                            <p>
+                                We had two lectures this week, the first was focussed on 'Information Architecture',
+                                this
+                                lecture focussed on 5 main points:
+                            </p>
+                            <p>
+                            <ol>1. Data vs Information</ol>
+                            <ol>2. Wayfinding and Navigation</ol>
+                            <ol>3. Sitemaps and App Structure</ol>
+                            <ol>4. Classification and Labelling</ol>
+                            <ol>5. Storage and Transformation</ol>
+                            </p>
+                            <p>
+                                It touched on the histories and origins of each of these key points and some key
+                                contextual
+                                information around them.
+                            </p>
+                            <p>
+                                The second lecture we had focussed on Fluid Typography. It discussed the origins of
+                                typography
+                                and
+                                went through the history of it, to the point of where it is today.
+                            </p>
+                            <p>
+                                Amongst other things, the lecture also talked about:
+                            </p>
+                            <p>
+                            <ol>Digital Typeface Design</ol>
+                            <ol>Phototypesetting</ol>
+                            <ol>The Relationship of Musical Scales to Page Proportions</ol>
+                            <ol>Modular Scales n UI Typography</ol>
+                            <ol>Continuous Scaling vs Snapping to Breakpoints</ol>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            <h2>Week 4</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                In Week 4 we had Two Lectures, A Workshop and Computer Lab.
+                            </p>
+                            <p>
+                                In the Workshop we were introduced to our T3 Research Project, for this project we'll be
+                                creating a
+                                Research Project around one of two topics:
+                            <P>
+                            <ol>1. Student Note-Taking and Study Support</ol>
+                            <ol>2. Science Communication and Hazard Awareness</ol>
+                            </P>
+                            <p>
+                                I have opted to go for the first of the two options and have started working towards the
+                                first
+                                one.
+                            </p>
+                            <p>
+                                In the Computer Lab we focussed on colours and used https://colorbox.io/ to create a
+                                colour
+                                palette
+                                then export that to figma.
+                            </p>
+                            <p>
+                                We had two lectures this week, the first was focussed on 'Functional and Perceptual
+                                Patterns'.
+                            <p>
+                                The second focussed on Colour Systems.
+                            </p>
+                            <p>
+                                Unfortunately due to course work for PROD101 and some personal obligations I haven't had
+                                a
+                                chance to
+                                watch these lectures yet. I am hoping to catch up over the next week.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFive">
+                            <h2>Week 5</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>
+                                In Week 5 we had Two Lectures, A Workshop and Computer Lab.
+                            </p>
+                            <p>
+                                In the Workshop we focused on Journey Mapping, where we worked in groups to journey map
+                                a
+                                users journey through signing up to a graphic design tool of our imagination / Canva.
+
+                            <p>
+                                In the Computer Lab we looked at intrinsic layouts and worked on a lab activity to
+                                design a
+                                'card' in Figma, then replicate it in CSS/HTML, you can see this on this page, with the
+                                new
+                                layout. (～￣▽￣)～
+                            </p>
+                            <p>
+                                We had two lectures this week, the first was focussed on 'User Interface Prototyping',
+                                this
+                                is where we learnt about the different types of prototyping for user interfaces as well
+                                as
+                                in general. It also talked about when it's appropriate to use them and what they're best
+                                suited for.
+                            <p>
+                                The second focussed on 'Intrinsic Layouts'.
+                            </p>
+                            <p>
+                                Unfortunately due to course work for PROD101 and some personal obligations I haven't had
+                                a
+                                chance to
+                                watch the second lecture yet. I am hoping to catch up over the next week.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseSix">
+                            <h2>Week 6</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseSeven">
+                            <h2>Week 7</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseEight">
+                            <h2>Week 8</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseNine">
+                            <h2>Week 9</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTen">
+                            <h2>Week 10</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseEleven">
+                            <h2>Week 11</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwelve">
+                            <h2>Week 12</h2>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 2</h2>
-
-                        </summary>
-                        <p>
-                            In Week 2 we had Two Lectures, A Workshop and Computer Lab.
-                        </p>
-
-                        <p>
-                            I was unfortunately away, and unable to attend the Workshop for Week 2.
-                        </p>
-                        <p>
-                            I was unfortunately away, and unable to attend the Computer Lab for Week 2.
-                        </p>
-                        <p>
-                            We had two lectures this week, the first was focussed on 'The Psychology of Experience',
-                            this
-                            covered the framework for understanding design research and the various forms of
-                            Experience
-                            (Dynamic,
-                            Complex, Subjective). It also took us through various aspects of experience the
-                            Psychology behind it that as designers need to take into account.
-                            The second was focussed on 'Document Structure', this covered basic document and
-                            typography
-                            structures of a website as well as various different aspects and considerations of web
-                            design/development.
-                        </p>
-                    </details>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 3</h2>
-                        </summary>
-                        <p>
-                            In Week 3 we had Two Lectures, A Workshop and Computer Lab.
-                        </p>
-                        <p>
-                            In the Workshop we performed an activity where we were given a website and we
-                            sitemapped
-                            it as a
-                            group. This involved creating a spreadsheet of all the links and different pages to
-                            the
-                            website.
-                        </p>
-                        <p>
-                            In the Computer Lab we focussed on fonts, and using Figma to play around with fonts
-                            and
-                            find
-                            ones
-                            we
-                            like. We did this by finding a body and a header font then adjusting the weight,
-                            style
-                            (bold,
-                            italic, etc.), and the line heights. You can see this below.
-                        </p>
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100% viewport" height="450"
-                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F88dXD9Plx3SM0HgKRcnRVc%2FFonts---Lab-3%3Fnode-id%3D0-1%26t%3DciNGHzoh31rsloyo-1"
-                            allowfullscreen></iframe>
-                        <p>
-                            We had two lectures this week, the first was focussed on 'Information Architecture',
-                            this
-                            lecture focussed on 5 main points:
-                        </p>
-                        <p>
-                        <ol>1. Data vs Information</ol>
-                        <ol>2. Wayfinding and Navigation</ol>
-                        <ol>3. Sitemaps and App Structure</ol>
-                        <ol>4. Classification and Labelling</ol>
-                        <ol>5. Storage and Transformation</ol>
-                        </p>
-                        <p>
-                            It touched on the histories and origins of each of these key points and some key
-                            contextual
-                            information around them.
-                        </p>
-                        <p>
-                            The second lecture we had focussed on Fluid Typography. It discussed the origins of
-                            typography
-                            and
-                            went through the history of it, to the point of where it is today.
-                        </p>
-                        <p>
-                            Amongst other things, the lecture also talked about:
-                        </p>
-                        <p>
-                        <ol>Digital Typeface Design</ol>
-                        <ol>Phototypesetting</ol>
-                        <ol>The Relationship of Musical Scales to Page Proportions</ol>
-                        <ol>Modular Scales n UI Typography</ol>
-                        <ol>Continuous Scaling vs Snapping to Breakpoints</ol>
-                        </p>
-                    </details>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 4</h2>
-                        </summary>
-
-                        <p>
-                            In Week 4 we had Two Lectures, A Workshop and Computer Lab.
-                        </p>
-                        <p>
-                            In the Workshop we were introduced to our T3 Research Project, for this project we'll be
-                            creating a
-                            Research Project around one of two topics:
-                        <P>
-                        <ol>1. Student Note-Taking and Study Support</ol>
-                        <ol>2. Science Communication and Hazard Awareness</ol>
-                        </P>
-                        <p>
-                            I have opted to go for the first of the two options and have started working towards the
-                            first
-                            one.
-                        </p>
-                        <p>
-                            In the Computer Lab we focussed on colours and used https://colorbox.io/ to create a
-                            colour
-                            palette
-                            then export that to figma.
-                        </p>
-                        <p>
-                            We had two lectures this week, the first was focussed on 'Functional and Perceptual
-                            Patterns'.
-                        <p>
-                            The second focussed on Colour Systems.
-                        </p>
-                        <p>
-                            Unfortunately due to course work for PROD101 and some personal obligations I haven't had
-                            a
-                            chance to
-                            watch these lectures yet. I am hoping to catch up over the next week.
-                        </p>
-                    </details>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 5</h2>
-                        </summary>
-                        <p>
-                            In Week 5 we had Two Lectures, A Workshop and Computer Lab.
-                        </p>
-                        <p>
-                            In the Workshop we focused on Journey Mapping, where we worked in groups to journey map a users journey through signing up to a graphic design tool of our imagination / Canva.
-
-                        <p>
-                            In the Computer Lab we looked at intrinsic layouts and worked on a lab activity to
-                            design a
-                            'card' in Figma, then replicate it in CSS/HTML, you can see this on this page, with the
-                            new
-                            layout. (～￣▽￣)～
-                        </p>
-                        <p>
-                            We had two lectures this week, the first was focussed on 'User Interface Prototyping', this is where we learnt about the different types of prototyping for user interfaces as well as in general. It also talked about when it's appropriate to use them and what they're best suited for.
-                        <p>
-                            The second focussed on 'Intrinsic Layouts'.
-                        </p>
-                        <p>
-                            Unfortunately due to course work for PROD101 and some personal obligations I haven't had
-                            a
-                            chance to
-                            watch the second lecture yet. I am hoping to catch up over the next week.
-                        </p>
-                    </details>
-                </div>
-            </div>
-            <!-- <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 6</h2>
-
-                        </summary>
-                    </details>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 7</h2>
-
-                        </summary>
-                    </details>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 8</h2>
-
-                        </summary>
-                    </details>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 9</h2>
-
-                        </summary>
-                    </details>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 10</h2>
-
-                        </summary>
-                    </details>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 11</h2>
-
-                        </summary>
-                    </details>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_content">
-                    <details>
-                        <summary>
-                            <h2 class="card-title">Week 12</h2>
-
-                        </summary>
-                    </details>
-                </div>
-            </div> -->
-
+        </div>
     </main>
+    <footer>
+        <p class="footer">Made in a rush by Dan Agnew</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
-<footer>
-    <p class="footer">Made in a rush by Dan Agnew</p>
-</footer>
+
 
 </html>
 

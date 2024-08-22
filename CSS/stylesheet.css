@@ -11,7 +11,10 @@ main {
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
-    margin: auto 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
 body {
@@ -32,12 +35,11 @@ h1 {
 }
 
 h2 {
-    font-family: "Oxygen Mono", sans-serif;
+    font-family: "Pavanam", sans-serif;
     font-weight: 500;
     margin: 0;
     display: inline;
     color: var(--text-color-title);
-
 }
 
 p,
@@ -50,123 +52,29 @@ ol {
 
 /* ====== NavBar Start ====== */
 
-nav {
-    display: inline-block;
-    list-style-type: none;
-    text-align: center;
-    /* overflow: hidden; */
-}
-
-nav .icon {
-    display: none;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a {
-    color: var(--text-color-title);
-    font-family: "Oxygen", sans-serif;
-    font-weight: 400;
-    display: inline;
-    width: 5em;
-    background-color: var(--background-color-dark);
-    padding: 0.63em;
-}
-
-nav ul li a:hover {
-    background-color: var(--background-color-dark-hover)
-}
-
-nav ul li a.active {
-    background-color: var(--background-color-dark-hover);
-    color: var(--text-color-title);
-}
-
-/* @media screen and (max-width: 600px) {
-    nav a:not(:first-child) {
-        display: none;
-    }
-
-    nav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    nav.responsive {
-        position: relative;
-        right: 0;
-        top: 0;
-    }
-
-    nav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-} */
-
 /* ====== NavBar End ====== */
 
 /* ====== Collapsible Content Start====== */
 
-/* .weekly_update {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: flex-start;
-    padding: 20px;
-    cursor: pointer;
-    padding: 5px;
-    border: 5px;
+
+.accordion {
+    max-width: auto;
+    text-align: left;
+    padding: 1em 1em 1em 1em;
+
+}
+
+.accordion-button:after {
+    background-image: url("data: image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23F1A208' stroke-linecap='round' stroke-linejoin='round' %3e%3cpath d='M2 5L8 11L14 5' /%3e%3c/svg%3e") !important;
+}
+
+.accordion-body {
     background-color: var(--background-color-dark-hover);
 }
 
-summary {
-    text-align: left;
-    list-style-position: outside;
-    margin-left: 30px;
-    padding: 10px 10px 10px 20px;
-    border-radius: 5px;
-}
-
-summary::marker {
-    color: var(--text-color-title);
-    text-align: left;
-    list-style-position: outside;
-    margin-left: 30px;
-    padding: 10px 10px 10px 20px;
-    border-radius: 5px;
-}
-
-summary:hover {
-    text-align: left;
-    list-style-position: outside;
-    margin-left: 30px;
-    padding: 10px 10px 10px 20px;
-    border-radius: 5px;
-} */
-
 /* ====== Collapsible Content End ====== */
+
+
 
 /* ====== Main Content  ====== */
 
@@ -178,10 +86,7 @@ summary:hover {
 }
 
 .notebook {
-    display: list-item;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: auto;
+    width: 60vw;
 }
 
 /* .week-1,
