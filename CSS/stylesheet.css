@@ -3,6 +3,7 @@
     --text-color-body: #FFD26B;
     --background-color-dark: #1e1e1e;
     --background-color-dark-hover: #2c2c2c;
+
 }
 
 main {
@@ -12,8 +13,8 @@ main {
     font-size: 100%;
     vertical-align: baseline;
     margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-bottom: auto;
 }
 
@@ -21,7 +22,7 @@ body {
     line-height: 1;
     font-family: "Oxygen", sans-serif;
     background-color: var(--background-color-dark);
-    color: #ffffff;
+    /* color: #ffffff; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,10 +53,18 @@ ol {
 
 /* ====== NavBar Start ====== */
 
+.navbar {
+    background-color: var(--background-color-dark) !important;
+}
+
+
+.nav-link {
+    color: var(--text-color-title) !important;
+}
+
 /* ====== NavBar End ====== */
 
 /* ====== Collapsible Content Start====== */
-
 
 .accordion {
     max-width: auto;
@@ -68,12 +77,26 @@ ol {
     background-image: url("data: image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23F1A208' stroke-linecap='round' stroke-linejoin='round' %3e%3cpath d='M2 5L8 11L14 5' /%3e%3c/svg%3e") !important;
 }
 
-.accordion-body {
+.accordion-body, .accordion-button,
+.accordion-button:not(.collapsed ){
     background-color: var(--background-color-dark-hover);
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /* ====== Collapsible Content End ====== */
 
+.accordion-button {
+    background-color: var(--background-color-dark);
+}
+
+.accordion-border-color {
+    color: red;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--background-color-dark-hover);
+}
 
 
 /* ====== Main Content  ====== */
@@ -86,19 +109,12 @@ ol {
 }
 
 .notebook {
-    width: 60vw;
+    width: 100%;
 }
-
-/* .week-1,
-.week-2,
-.week-3,
-.week-4 .week-5 {
-    padding: 1em 1em 1em 1em;
-} */
 
 /* ====== Cards Start ======*/
 
-.card {
+/* .card {
     background: var(--background-color-dark-hover);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
     transition: all 400ms ease;
@@ -117,7 +133,7 @@ ol {
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
         transition: all 400ms ease;
     }
-}
+} */
 
 /* ====== Cards End ======*/
 
