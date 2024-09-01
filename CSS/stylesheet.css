@@ -1,8 +1,10 @@
 :root {
     --text-color-title: #F1A208;
     --text-color-body: #FFD26B;
-    --background-color-dark: #1e1e1e;
-    --background-color-dark-hover: #2c2c2c;
+    /* --background-color-dark: #1e1e1e; */
+    --background-color-dark: #202329;
+    /* --background-color-dark-hover: #2c2c2c; */
+    --background-color-dark-hover: #202329;
 
 }
 
@@ -43,14 +45,44 @@ h2 {
     color: var(--text-color-title);
 }
 
-p,
-ol {
+h3 {
+    font-family: "Pavanam", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    display: inline;
+    color: var(--text-color-title);
+}
+
+h4 {
+    font-family: "Pavanam", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    display: inline;
+    color: var(--text-color-title);
+}
+
+h6, h7 {
+    color: var(--text-color-title);
+}
+
+p {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     line-height: 1.5em;
-    color: var(--text-color-body);
+    /* color: var(--text-color-body); */
 }
 
+ol {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    /* color: var(--text-color-body); */
+}
+
+li {
+    line-height: 1.5em;
+    /* color: var(--text-color-body); */
+}
 /* ====== NavBar Start ====== */
 
 .navbar {
@@ -77,8 +109,9 @@ ol {
     background-image: url("data: image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23F1A208' stroke-linecap='round' stroke-linejoin='round' %3e%3cpath d='M2 5L8 11L14 5' /%3e%3c/svg%3e") !important;
 }
 
-.accordion-body, .accordion-button,
-.accordion-button:not(.collapsed ){
+.accordion-body,
+.accordion-button,
+.accordion-button:not(.collapsed) {
     background-color: var(--background-color-dark-hover);
     outline: none !important;
     box-shadow: none !important;
@@ -113,6 +146,21 @@ ol {
 }
 
 /* ====== Cards Start ======*/
+
+.card-title {
+    color: var(--text-color-title);
+}
+
+.card {
+    margin-top: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.lead {
+    color: var(--text-color-body);
+}
+
 
 /* .card {
     background: var(--background-color-dark-hover);
