@@ -61,7 +61,8 @@ h4 {
     color: var(--text-color-title);
 }
 
-h6, h7 {
+h6,
+h7 {
     color: var(--text-color-title);
 }
 
@@ -83,6 +84,7 @@ li {
     line-height: 1.5em;
     /* color: var(--text-color-body); */
 }
+
 /* ====== NavBar Start ====== */
 
 .navbar {
@@ -142,6 +144,34 @@ li {
 
 .notebook {
     width: 100%;
+}
+
+/* ====== Color Picker ====== */
+
+.color-box {
+    height: 75vh;
+    background-color: var(--background-color-dark);
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.08s;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.box-red {
+    background-color: hsl(0, 65%, 35%);
+}
+
+.box-green {
+    background-color: hsl(122, 52%, 28%);
+}
+
+.box-blue {
+    background-color: hsl(215, 71%, 38%);
+}
+
+.box-magenta {
+    background-color: hsl(303, 73%, 37%);
 }
 
 /* ====== Cards Start ======*/
