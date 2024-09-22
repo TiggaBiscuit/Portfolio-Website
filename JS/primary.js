@@ -1,3 +1,4 @@
+// Code originally created by Mark Rickerby
 // Runs when the document loads
 function onLoad() {
     // Listen to keypress events
