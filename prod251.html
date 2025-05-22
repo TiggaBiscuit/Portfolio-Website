@@ -35,8 +35,8 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             PROD151
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
@@ -50,12 +50,11 @@
                             PROD251
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li class="nav-item"><a class="nav-link" href="prod251.html">User Research Report</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="prod251.html">User Research Report</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="color.html">Colour Picker</a>
@@ -70,16 +69,22 @@
     <main>
         <div class="card shadow">
             <div class="card-body">
-                <h1 class="card-title">Work in Progress</h1>
-                <p class="lead">
-                    This page is currently under construction. Please check back later for updates.
-                </p>
-                <p class="lead">
-                    In the meantime, feel free to explore my other pages or contact me for more information.
-                </p>
-                <p class="lead">
-                    Thank you for your understanding!
-                <p>
+                <h1 class="card-title">User Research Project</h1>
+            </div>
+        </div>
+        <div class="card shadow">
+            <div class="card-body">
+                <div id="adobe-dc-view"></div>
+                <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+                <script type="text/javascript">
+                    document.addEventListener("adobe_dc_view_sdk.ready", function () {
+                        var adobeDCView = new AdobeDC.View({ clientId: "333fb6c0aa9648ecb28ee26a0550551f", divId: "adobe-dc-view" });
+                        adobeDCView.previewFile({
+                            content: { promise: "/Assets/Group_2_GeoForge_Dan_Agnew.pdf" },
+                            metaData: { fileName: "Group_2_GeoForge_Dan_Agnew.pdf" }
+                        }, { showAnnotationTools: false, showDownloadPDF: false, showPrintPDF: false });
+                    });
+                </script>
             </div>
         </div>
     </main>

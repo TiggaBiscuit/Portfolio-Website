@@ -237,3 +237,11 @@ footer {
 }
 
 /* ====== Footer End ====== */
+
+/* ====== Media Query ====== */
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+/* ====== Media Query End ====== */
