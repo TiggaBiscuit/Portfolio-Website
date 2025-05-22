@@ -80,7 +80,7 @@
                     document.addEventListener("adobe_dc_view_sdk.ready", function () {
                         var adobeDCView = new AdobeDC.View({ clientId: "333fb6c0aa9648ecb28ee26a0550551f", divId: "adobe-dc-view" });
                         adobeDCView.previewFile({
-                            content: { location: "/Assets/Group_2_GeoForge_Dan_Agnew.pdf"},
+                            content: { location: {url: "/Assets/Group_2_GeoForge_Dan_Agnew.pdf"}},
                             metaData: { fileName: "Group_2_GeoForge_Dan_Agnew.pdf" }
                         }, { showAnnotationTools: false, showDownloadPDF: false, showPrintPDF: false });  
                     });
